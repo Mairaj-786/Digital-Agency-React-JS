@@ -1,0 +1,72 @@
+.SideNavbar h1{
+    position: relative;
+    width: 100%;
+    height: 100vh !important;
+    background: linear-gradient(90deg ,#fff,rgba(0,0,0,0.9)),#222 !important;
+    animation: abc .3s linear;
+}
+
+@keyframes abc {
+    0%{
+        width: 0%;
+        transform: rotate(0deg);
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+        transform: rotate(360deg);
+        width: 100%;
+    }
+}
+.SideNavbar .showNavBg{
+    display: block !important;
+    transition: 0.4s linear all !important;
+    
+}
+
+.sideNav_inner{
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+.show{
+    display: block !important;
+    
+    transition: 0.4s linear all !important;
+}
+.sideNav_inner img{
+    margin: 0 15em;
+    width: 20%;
+    padding-bottom: 4em !important;
+}
+
+.sideNav_inner_ul{
+    display: flex;
+}
+.sideNav_inner_ul li{
+    list-style: none;
+    text-decoration-line: none;
+}
+.sideNav_inner_ul li a{
+    margin: 1em 1em;
+    color: #fff;
+    font-size: 20px;
+    text-decoration-line: none;
+    font-family: var(--Oswald);
+    text-transform: uppercase;
+}
+
+/* hide Sidenav */
+.fa-times{
+    position: absolute;
+    right: 0;
+    top: 0;
+    color: #fff;
+    font-size: 30px;
+    cursor: pointer;
+}
+.SideNavbar .HideNav{
+    background-color: #fff !important;
+}
+/*  */

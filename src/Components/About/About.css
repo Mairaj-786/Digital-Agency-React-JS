@@ -1,0 +1,52 @@
+.About{
+    position: relative;
+    background-color: var(--yellow);
+    width: 100%;
+    height: 100vh;
+    
+}
+.AboutSvg{
+    position: relative;
+}
+.svg{
+    position: absolute;
+    top: -30%;
+}
+.About__text{
+    position: relative;
+}
+.About__text h1{
+    font-size: 50px;
+    font-family: var(--Oswald);
+    font-weight: bold;
+    text-transform: uppercase;
+    color: #fff;
+}
+.About__text h1 span{
+    color: #000;
+}
+.About__text p{
+    padding-top: 2em;
+    font-size: 18px;
+    width: 37%;
+    color: #fff;
+    margin-bottom: 4em;
+}
+
+#btn{
+    background: #222 !important;
+    border: 1px solid #fff;
+    border-radius: 40px;
+    padding: .6em 1.5em;
+    color: #fff !important;
+    outline: none;
+    font-weight: bold;
+    font-size: 17px;
+    transition: 0.3s linear;
+    text-decoration-line: none;
+    
+}
+#btn:hover{
+    color: #000 !important;
+    background: #fff !important;
+}

@@ -1,0 +1,65 @@
+.Home{
+    position: relative;
+    width: 100%;
+    height: auto;
+    background-image: linear-gradient(rgba(0,0,0,0.2),rgba(0,0,0,0.2)), url('../le.png');
+    background-size: 100% 100%;
+    background-color: rgb(20, 170, 170);
+}
+.main_text{
+    position: relative;
+    padding-bottom: 0em;
+}
+.separator__svg{
+    height: 20vh;
+    
+}
+.Home_main_text{
+    margin-top: 5%;
+    margin-left: 10%;
+    transform: translate(-50% -50%);
+}
+.left_side{
+    margin-top: 3.4em;
+    width: 100%;
+
+}
+.left_side h2{
+    font-family: var(--Oswald);
+    font-size: 57px;
+}
+.left_side p{
+    font-weight: 500;
+
+}
+.right_side{
+    color: var(--white);
+    background-color: var(--yellow);
+    height: auto;
+    margin-top: 2em;
+    padding: .5em 2em;
+    
+}
+.right_side span{
+    font-size: 50px;
+    font-weight: 300;
+}
+
+.right_side h2{
+    font-size: 3.5em;
+    font-family: var(--Oswald);
+}
+.right_side button{
+    background-color: transparent;
+    padding: .4em 1em;
+    border-radius: 40px;
+    font-weight: bold;
+    color: #fff;
+    border: 1px solid #fff;
+    transition: 0.4s linear;
+}
+
+.right_side button:hover{
+    background-color: #fff;
+    color: #000;
+}
