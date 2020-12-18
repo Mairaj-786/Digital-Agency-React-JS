@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Oswald:wght@600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans+Condensed:wght@300&display=swap');
 *{
     padding: 0%;
     margin: 0%;
@@ -19,4 +20,86 @@ html{
 @import "./Components/Navbar/Navbar.css"; /* Using a string */
 @import "./Components/About/About.css"; /* Using a string */
 @import "./Components/Navbar/SideNavbar.css"; /* Using a string */
+@import "./Components/StateFacts/Facts.css"; /* Using a string */
+@import "./Components/Team/Team.css"; /* Using a string */
+
+
+@media(max-width: 991px){
+  html{
+    font-size: 70%;
+  }
+  .About__text h1{
+    font-size: 44px;
+  }
+  .svg{
+    top: -21%;
+}
+.About{
+  height: 85vh !important;   
+  /* text-align: center;  */
+}
+}
+@media(max-width: 769px){
+  html{
+    font-size: 67%;
+  }
+  .social_icons ul li a{
+    margin: 0;
+  }
+  .navbar{
+    height: 8vh;
+  }
+  .navbar-brand{
+    padding: 0;
+    height: 8vh;
+  }
+  .fa-bars{
+    color: #000 !important;
+    background-color: red;
+    z-index: 1;
+  }
+  .left_side{
+    text-align: center;
+  }
+  .About__text h1{
+    padding-top: 2em;
+  }
+  .svg{
+    background-color: transparent !important;
+    display: none;
+}
+.Home{
+  text-align: center;
+}
+.About{
+  text-align: center;
+  height: 100% !important;
+}
+.About__Icons i{
+  padding: 0;
+  font-size: 200px;
+  text-align: center !important;
+}
+
+.fa-bars{
+  display: none !important;
+}
+.fa-whatsapp {
+  text-align: right !important;
+}
+.Fact_inner h1 ,p{
+  text-align: center !important;
+}
+.Facts{
+  position: relative;
+  height: 100vh;
+  width: 100%;
+  margin-top: 16em;
+}
+.Team{
+  display: block !important;
+  width: 100%;
+  height: auto;
+}
+}
 

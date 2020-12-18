@@ -20,7 +20,7 @@ const Home = () => {
                     <div className="row">
                         <div className="col-lg-4 col-md-4 col-12 ml-auto">
                             <div className="left_side">
-                                <h2>I Make </h2>
+                                <h2>we<br /> Make </h2>
                                 <p>Beautiful <spna>&</spna> Responsive</p>
 
                             </div>

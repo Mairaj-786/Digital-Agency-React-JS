@@ -10,12 +10,12 @@ const Navbar = (props) => {
             <div className="Navbar">
                 <div className="container">
                     <div className="row">
-                        <div className="col-lg-8">
+                        <div className="col-lg-8 col-md-8 col-6">
                             <div className="whatsApp">
-                                <i className="fa fa-whatsapp"><span className="pl-2">+92306-273-608-0</span></i>
+                                <i className="fa fa-whatsapp"><span className="pl-2">+92306 2736 080</span></i>
                             </div>
                         </div>
-                        <div className="col-lg-4 ml">
+                        <div className="col-lg-4 col-md-4 col-6 ">
                             <div className="social_icons">
                                 <ul>
                                     <li><a href="#"><i className="fa fa-facebook"></i></a></li>
@@ -40,7 +40,7 @@ const Navbar = (props) => {
                                         <a className="nav-link" href="#">Home <span className="sr-only">(current)</span></a>
                                     </li>
                                     <li className="nav-item">
-                                        <a className="nav-link" href="#">About</a>
+                                        <a className="nav-link" href="#/">About</a>
                                     </li>
                                     <li className="nav-item">
                                         <a className="nav-link" href="#">portfolio</a>

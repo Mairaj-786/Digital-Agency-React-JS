@@ -3,7 +3,7 @@
     padding-top: 2.3em;
 }
 .whatsApp i{
-    font-size:19px;
+    font-size:18px;
     color: var(--white);
     font-weight: bold;
 }
@@ -19,7 +19,7 @@
 }
 .social_icons ul li a{
     font-size: 19px;
-    margin: 0 .5em;
+    margin: 0 .3em;
     color: #fff;
     padding: .2em .5em;
     transition: all 0.4s ease;

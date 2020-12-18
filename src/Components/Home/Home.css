@@ -22,14 +22,18 @@
 .left_side{
     margin-top: 3.4em;
     width: 100%;
+    text-align: right;
 
 }
 .left_side h2{
+    text-transform: uppercase;
     font-family: var(--Oswald);
     font-size: 57px;
 }
 .left_side p{
     font-weight: 500;
+    font-size: 16px;
+    text-transform: capitalize;
 
 }
 .right_side{
@@ -42,7 +46,8 @@
 }
 .right_side span{
     font-size: 50px;
-    font-weight: 300;
+    font-weight: 100;
+    font-family: 'Open Sans Condensed', sans-serif;
 }
 
 .right_side h2{

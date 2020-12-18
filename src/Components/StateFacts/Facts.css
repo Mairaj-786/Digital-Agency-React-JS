@@ -1,0 +1,49 @@
+        
+.Facts{
+    position: relative;
+    height: 80vh;
+    width: 100%;
+    margin-top: 26em;
+}
+.Fact_inner h1{
+    font-family: var(--Oswald);
+    font-size: 50px;
+    text-align: right !important;
+}
+.Fact_inner p{
+    text-align: right;
+    width: 88%;
+    margin-left: auto;
+}
+.progress{
+    height: 2.8vh;
+    border-radius: 30px;
+    
+}
+.progress-bar{
+    background-color: var(--yellow);
+    color: #000;
+    font-size: 18px;
+}
+.Pypercentage{
+    padding-left: 88%;
+    font-weight: 400;
+}
+.skills{
+    margin-bottom: 5em;
+}
+
+.Reactpercentage{
+    padding-left: 79%;
+    font-weight: 400;
+}
+
+.Csspercentage{
+    padding-left: 82%;
+    font-weight: 400;
+}
+.Bootpercentage{
+    padding-left: 80%;
+    font-weight: 400;
+}
+

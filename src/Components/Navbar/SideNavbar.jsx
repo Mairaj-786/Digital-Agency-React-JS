@@ -15,7 +15,7 @@ const SideNavbar = (props) => {
                     <img src="/images/logo-yellow.png" />
                     <ul className="sideNav_inner_ul">
                         <li><a href="#">Home</a></li>
-                        <li><a href="#">About</a></li>
+                        <li><a href="/#About">About</a></li>
                         <li><a href="#">portfolio</a></li>
                         <li><a href="#">client</a></li>
                         <li><a href="#">blog</a></li>
