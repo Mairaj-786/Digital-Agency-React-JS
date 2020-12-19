@@ -32,7 +32,7 @@ const Navbar = (props) => {
                         <nav className="navbar navbar-expand-lg navbar-light bg-light">
                             <a className="navbar-brand" href="#"><img src="/images/logo.png" /></a>
                             <button className="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                                <span className="navbar-toggler-icon"></span>
+                                <i className={HamTime} onClick={UpdateNavbar}></i>
                             </button>
                             <div className="collapse navbar-collapse" id="navbarNav">
                                 <ul className="navbar-nav ml-auto">
@@ -58,6 +58,7 @@ const Navbar = (props) => {
                                         <i className={HamTime} onClick={UpdateNavbar}></i>
                                     </li>
                                 </ul>
+
                             </div>
                         </nav>
                     </div>

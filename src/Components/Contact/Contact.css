@@ -1,0 +1,77 @@
+.Contact{
+    position: relative;
+    background-color: var(--yellow);
+    width: 100%;
+    height: 85vh;   
+    margin-top: 23em; 
+    padding-top: 5em    ;
+}
+.Contact h2{
+    font-family: var(--Oswald) !important;
+    font-size: 33px;
+    padding-bottom: 1em;
+}
+.ContactSvg{
+    position: relative;
+}
+.svg{
+    position: absolute;
+    top: -35%;
+}
+.ContactSvgBottom{
+    background-color: var(--yellow);
+    z-index: -1;
+    position: absolute;
+}
+.contact_inner{
+    position: relative;
+}
+/* left side */
+.contact_inner_left_Side{
+    position: relative;
+}
+.form-group input{
+    width: 100% !important
+}
+.form-group input{
+    box-shadow: none !important;
+    height: 7vh;
+    width: 100% !important;
+    padding: .6em;
+    font-size: 18px;
+    margin: 0%;
+}
+.form a{
+    font-size: 17px;
+    border-radius: 40px;
+}
+.contact_inner_right_Side input{
+    box-shadow: none !important;
+    height: 25vh;
+    text-align: center;
+}
+
+/* location right side  */
+.location_right_side{
+    /* text-align: right; */
+    position: relative;
+}
+.location_right_side h2{
+    font-family: var(--Oswald);
+}
+.location_right_side p{
+    text-align: left;
+    font-size: 18px;
+}
+.location_right_side i{
+    font-size: 23px;
+    margin-top: 1.4em;
+    color: gray;
+
+}
+.location_right_side i span{
+    color: black;
+    padding-left: 1em;
+    text-align: right;
+    font-weight: 800 !important;
+}

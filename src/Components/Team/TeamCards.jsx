@@ -9,40 +9,72 @@ const TeamCards = () => {
     var settings = {
         dots: false,
         infinite: true,
-        speed: 1000,
+        speed: 500,
         slidesToShow: 3,
-        slidesToScroll: 1
+        slidesToScroll: 1,
+        initialSlide: 0,
+        responsive: [
+            {
+                breakpoint: 1024,
+                settings: {
+                    slidesToShow: 2,
+                    slidesToScroll: 1,
+                    infinite: true,
+                }
+            },
+            {
+                breakpoint: 769,
+                settings: {
+                    slidesToShow: 1,
+                    slidesToScroll: 1,
+                    initialSlide: 1
+                }
+            },
+            {
+                breakpoint: 600,
+                settings: {
+                    slidesToShow: 1,
+                    slidesToScroll: 1,
+                    initialSlide: 1
+                }
+            },
+            {
+                breakpoint: 480,
+                settings: {
+                    slidesToShow: 1,
+                    slidesToScroll: 1
+                }
+            }
+        ]
     };
     return (
-        <>
-            <div className="text-white">
-                <div className="container">
-                    <Slider {...settings}>
-                        <Zoom>
-                            <div className="IMG" data-aos='fade-up'>
-                                <h3><img src="/images/team4.png" alt="" /></h3>
-                            </div>
-                        </Zoom>
-                        <Fade top>
-                            <div className="IMG pt-5 mb-4">
-                                <h3><img src="/images/team2.png" alt="" /></h3>
-                            </div>
-                        </Fade>
-                        <Zoom top>
-                            <div className="IMG">
-                                <h3><img src="/images/team3.png" alt="" /></h3>
-                            </div>
-                        </Zoom>
-                        <div className="IMG pt-5">
-                            <h3><img src="/images/team4.png" alt="" /></h3>
-                        </div>
-
-
-                    </Slider>
+        <div className="container team">
+            <h2> OUR CREATIVE TEAM </h2>
+            <Slider {...settings}>
+                <div >
+                    <img src="/images/team2.png" alt="" />
                 </div>
-            </div>
-        </>
-    )
+                <div className="pt-5 mt-4">
+                    <img src="/images/team3.png" alt="" />
+                </div>
+                <div >
+                    <img src="/images/team4.png" alt="" />
+                </div>
+                <div className="pt-5 mt-4">
+                    <img src="/images/team2.png" alt="" />
+                </div>
+                <div className="pt-5 mt-4">
+                    <img src="/images/team3.png" alt="" />
+                </div>
+                <div >
+                    <img src="/images/team4.png" alt="" />
+                </div>
+
+
+            </Slider>
+        </div>
+    );
+
 }
 
 export default TeamCards

@@ -38,15 +38,14 @@
 
 
 /* Team Card */
-.IMG img{
-    width: 80%;
-    margin: 5em auto !important;
-    transition: 0.3s linear all;
+.team img{
+    background: var(--yellow) !important;
     border-radius: 100%;
-    background-color: var(--yellow);
-
+    margin: 0 auto;
 }
-
-.text-white{
-    width: 100%;
+.team h2{
+    color: #fff;
+    font-family: var(--Oswald);
+    font-size: 50px;
+    margin-bottom: 1em;
 }

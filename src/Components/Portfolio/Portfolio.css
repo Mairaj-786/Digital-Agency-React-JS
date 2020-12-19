@@ -1,0 +1,40 @@
+.Portfolio{
+    position: relative;
+    background-color: var(--white) !important;
+    width: 100%;
+    height: auto;  
+    margin-top: 14.9em;
+}
+.PortfolioSvg{
+    position: relative;
+}
+.svg{
+    position: absolute;
+    top: -35%;
+}
+.PortfolioSvgSvgBottom{
+    background-color: var(--white);
+    z-index: -1;
+    position: absolute;
+}
+.Portfolio h1{
+    font-family: var(--Oswald);
+    font-size: 50px;
+    padding-bottom: 2em;
+}
+.Portfolio_IMG{
+    position: relative;
+    width: 100%;
+}
+.Portfolio_IMG img{
+    width: 80%;
+    height: 45vh;
+    transition: 0.6s linear all;
+}
+.Portfolio_IMG img:hover{
+    transform: scale(1.1);
+}
+.img-2 img{
+    height: 60vh;
+    margin-top: -8em;
+}

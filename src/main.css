@@ -22,12 +22,24 @@ html{
 @import "./Components/Navbar/SideNavbar.css"; /* Using a string */
 @import "./Components/StateFacts/Facts.css"; /* Using a string */
 @import "./Components/Team/Team.css"; /* Using a string */
+@import "./Components/Portfolio/Portfolio.css"; /* Using a string */
+@import "./Components/Contact/Contact.css"; /* Using a string */
+
+@import "./Components/Footer/Footer.css"; /* Using a string */
 
 
 @media(max-width: 991px){
   html{
     font-size: 70%;
   }
+  .fa-bars{
+    display: block !important;
+    right: 5%;
+    font-size: 38px;
+    top: 26%;
+    color: #000;
+  }
+
   .About__text h1{
     font-size: 44px;
   }
@@ -38,10 +50,33 @@ html{
   height: 85vh !important;   
   /* text-align: center;  */
 }
+/* team images */
+.team img{
+  width: 70%;
+}
+.Footer{  
+  margin-top: 66em;
+}
 }
 @media(max-width: 769px){
   html{
     font-size: 67%;
+  }
+  h1{
+    font-size: 33px !important;
+  }
+  h2{
+    font-size: 40px !important;
+  }
+  p{
+    font-size: 17px !important;
+    text-align: center !important;
+  }
+  button{
+    font-size: 16px;
+  }
+  strong{
+    font-size: 14px;
   }
   .social_icons ul li a{
     margin: 0;
@@ -55,9 +90,35 @@ html{
   }
   .fa-bars{
     color: #000 !important;
-    background-color: red;
     z-index: 1;
   }
+  .SideNavbar h1{
+    height: 80vh !important;
+    width: 70%;
+    margin-left: auto;
+    background: linear-gradient(90deg ,#222,rgba(0,0,0,0.9)),#222 !important;
+
+}
+  /* Side Nav Animations */
+  @keyframes abc {
+    0%{
+        transform: scale(0);
+        width: 0%;
+    }
+    100%{
+        transform: scale(1);
+        width: 100%;
+    }
+}
+/* SideNav Animation End */
+  .sideNav_inner_ul{
+    display: block !important;
+  }
+  .sideNav_inner_ul li{
+    text-align: center;
+    padding-top: 1em !important;
+    font-size: 18px;
+}
   .left_side{
     text-align: center;
   }
@@ -100,6 +161,56 @@ html{
   display: block !important;
   width: 100%;
   height: auto;
+}
+/* team images */
+.team img{
+  width: 50%;
+}
+/*  */
+.Portfolio h1{
+  text-align: center;
+}
+.Portfolio_IMG{
+  margin: 0 a;
+}
+.Portfolio_IMG img{
+  margin: 0 auto !important;
+  width: 100%;
+  height: 50vh;
+}
+.fa-bars{
+  display: block !important;
+  right: 5%;
+  top: 19%;
+  font-size: 30px;
+  background:transparent !important;
+  /* position: relative; */
+}
+.Para_footer{
+  font-size: 14px !important;
+}
+.Footer ul li{
+  margin: 0;
+}
+.Footer{
+  position: relative;
+  height: 10vh;
+  margin-top: 12em;
+  margin-bottom: 5em;
+}
+
+/* COntact */
+.Contact{
+  height: auto;
+}
+.contact_inner_left_Side{
+  margin-bottom: .6em;
+  
+}
+.form a{
+  font-size: 17px;
+  border-radius: 40px;
+  margin-top: 1em;
 }
 }
 

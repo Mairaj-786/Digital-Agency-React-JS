@@ -1,0 +1,27 @@
+.Footer{
+    position: relative;
+    height: 10vh;
+    margin-top: 30em;
+    margin-bottom: 5em;
+}
+p{
+    font-size: 16px;
+    margin-left: auto !important;
+    text-align: right;
+     
+}
+.Footer ul li{
+    font-size: 21px;
+    transition: 0.3s linear;
+}
+.Footer ul li:hover{
+    background-color: teal;
+    border-radius: 40px;
+    
+}
+.Footer ul li a{
+    color: var(--black);
+}
+.Footer ul li:hover a{
+    color: var(--white);
+}
