@@ -103,11 +103,13 @@ html{
   @keyframes abc {
     0%{
         transform: scale(0);
+        /* transform: rotate(0deg); */
         width: 0%;
     }
     100%{
-        transform: scale(1);
-        width: 100%;
+      /* transform: rotate(-360deg); */
+        transform: scale(1.1);
+        width: 70%;
     }
 }
 /* SideNav Animation End */
@@ -118,6 +120,7 @@ html{
     text-align: center;
     padding-top: 1em !important;
     font-size: 18px;
+
 }
   .left_side{
     text-align: center;
@@ -203,8 +206,10 @@ html{
 .Contact{
   height: auto;
 }
-.contact_inner_left_Side{
+.contact_inner_left_Side input{
   margin-bottom: .6em;
+  width: 130% !important;
+  margin-left: em;
   
 }
 .form a{

@@ -54,16 +54,16 @@ const TeamCards = () => {
                 <div >
                     <img src="/images/team2.png" alt="" />
                 </div>
-                <div className="pt-5 mt-4">
+                <div>
                     <img src="/images/team3.png" alt="" />
                 </div>
                 <div >
                     <img src="/images/team4.png" alt="" />
                 </div>
-                <div className="pt-5 mt-4">
+                <div>
                     <img src="/images/team2.png" alt="" />
                 </div>
-                <div className="pt-5 mt-4">
+                <div>
                     <img src="/images/team3.png" alt="" />
                 </div>
                 <div >

@@ -1,14 +1,29 @@
-import React from 'react'
+import React, { useState, useEffect } from 'react'
+import { Link } from 'react-scroll'
 const Navbar = (props) => {
     const { HamTime } = props.navbar;
     const UpdateNavbar = () => {
         props.UpdateNavbar();
 
     }
+
+    const [fixed, Setfixed] = React.useState(0);
+    React.useEffect(() => {
+        window.addEventListener('scroll', handlescroll)
+    }, [])
+
+    const handlescroll = () => {
+        if (window.scrollY > 150) {
+            Setfixed(true)
+        } else {
+            Setfixed(false)
+        }
+    }
+
     return (
         <>
-            <div className="Navbar">
-                <div className="container">
+            <div className={`Navbar ${fixed ? "fixed-top bgSet" : ''}`}>
+                <div className={`container ${fixed ? 'hide' : ''}`}>
                     <div className="row">
                         <div className="col-lg-8 col-md-8 col-6">
                             <div className="whatsApp">
@@ -36,24 +51,22 @@ const Navbar = (props) => {
                             </button>
                             <div className="collapse navbar-collapse" id="navbarNav">
                                 <ul className="navbar-nav ml-auto">
-                                    <li className="nav-item active">
-                                        <a className="nav-link" href="#">Home <span className="sr-only">(current)</span></a>
+                                    <li className="nav-item">
+                                        <Link activeClass="active" to="home" spy={true} offset={0} duration={1300} smooth={true} className="nav-link" >home</Link>
                                     </li>
                                     <li className="nav-item">
-                                        <a className="nav-link" href="#/">About</a>
+                                        <Link activeClass="active" to="about" spy={true} offset={0} duration={1300} smooth={true} className="nav-link" >About</Link>
                                     </li>
                                     <li className="nav-item">
-                                        <a className="nav-link" href="#">portfolio</a>
+                                        <Link activeClass="active" to="portfolio" spy={true} offset={0} duration={1300} smooth={true} className="nav-link" >portfolio</Link>
                                     </li>
                                     <li className="nav-item">
-                                        <a className="nav-link" href="#">client</a>
+                                        <Link activeClass="active" to="team" spy={true} offset={0} duration={1300} smooth={true} className="nav-link" >team</Link>
                                     </li>
                                     <li className="nav-item">
-                                        <a className="nav-link" href="#">blog</a>
+                                        <Link activeClass="active" to="contact" spy={true} offset={0} duration={1300} smooth={true} className="nav-link" >contact</Link>
                                     </li>
-                                    <li className="nav-item">
-                                        <a className="nav-link" href="#">contact</a>
-                                    </li>
+
                                     <li className="nav-item">
                                         <i className={HamTime} onClick={UpdateNavbar}></i>
                                     </li>

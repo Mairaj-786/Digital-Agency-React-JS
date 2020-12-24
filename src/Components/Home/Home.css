@@ -30,6 +30,8 @@
     font-family: var(--Oswald);
     font-size: 57px;
 }
+
+
 .left_side p{
     font-weight: 500;
     font-size: 16px;
@@ -53,6 +55,7 @@
 .right_side h2{
     font-size: 3.5em;
     font-family: var(--Oswald);
+    
 }
 .right_side button{
     background-color: transparent;

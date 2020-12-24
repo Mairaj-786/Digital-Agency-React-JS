@@ -3,7 +3,7 @@
     width: 100%;
     height: 100vh !important;
     background: linear-gradient(90deg ,#fff,rgba(0,0,0,0.9)),#222 !important;
-    animation: abc .3s linear;
+    animation: abc .5s linear;
 }
 
 @keyframes abc {
